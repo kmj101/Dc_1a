@@ -16,16 +16,16 @@
       tempore similique eaque laborum minus obcaecati cupiditate exercitationem
       dolor.
     </p>
-    <p style="color: blueviolet">
+    <p style="color: rgba(12, 100, 30, 0.5)">
       Cum deleniti ipsum doloremque, similique nobis quam corrupti consectetur
       asperiores repudiandae? Atque praesentium quae magnam maxime nulla dolorem
       eaque deserunt.
     </p>
-    <p style="color: blue">
+    <p style="color: #ffcc22">
       Excepturi earum eius consequuntur sed quod perspiciatis quam, quidem
       tempore nostrum ducimus debitis. Eius quasi inventore hic magni in quod?
     </p>
-    <p style="color: brown">
+    <p style="color: #ff4f00; font-size: 24px; font-weight: bold">
       Vero assumenda libero pariatur hic autem odio deserunt cum unde
       cupiditate, omnis amet ipsum eos? Earum non cum ipsa debitis.
     </p>
@@ -51,3 +51,16 @@ tag attribute="attributeValue">
 여러 스타일 속성을 적을 때는 ;를 통해 구분한다
 <tag style="styleproperty1: value1; styleproperty2: value2; styleproperty3: value3;"></tag
 > -->
+
+<!-- 많이 사용되는 8bit 색 영역은 각 채널당 8bit의 값을 갖는다
+이 말은 각 채널마다 8bit개의 경우를 가질 수 있다
+이 말은 각 채널마다 2^8(2의 8승)개의 경우를 가질 수 있다
+이말은 각 채널마다 256개의 경우를 가질 수 있다는 의미고
+각 채널마다 0부터 255의 점수 값을 가질 수 있다는 의미고
+레드가 256 그린이 256 블루가 256가지 경우를 갖기에
+모든 경우의 수는 16777216이다 이게 8bit 컬러의 모든 색이다 
+0~255는 16진수로 두자리로 표현이 가능하다.
+16진수는 0부터 시작해서 f로 끝난다 0~9,a~f
+255=16진수로 ff
+r,g,b의 값을 두자리 16진수 씩 쭉 이어적은게 헥스코드다
+255,64,0=ff4f00 -->
