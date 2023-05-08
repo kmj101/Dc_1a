@@ -1,0 +1,40 @@
+<style>
+      body {
+        margin: 0;
+      }
+
+      .common1 {
+        background-color: palegoldenrod;
+      }
+
+      #elem11 {
+        margin: 16px;
+        padding: 16px;
+      }
+
+      #elem22 {
+        margin: 10px 20px 30px 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      #elem33 {
+        margin: 20px 50px;
+        padding-inline: 20px;
+      }
+
+      #elem44 {
+        margin: 10px auto;
+        max-width: 960px;
+        padding-block: 20px;
+        border: 2px dotted #000;
+      }
+
+      #elem55 {
+        background-color: blueviolet;
+      }
+
+      #elem66 {
+        background-color: brown;
+      }
+    </style>
