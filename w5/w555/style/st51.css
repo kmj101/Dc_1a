@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.topnav {
+  background-color: gray;
+  min-height: 10px;
+  padding: 8px 16px;
+}
+
+.topnav__button {
+  color: white;
+}
+
+.topnav__logo {
+  height: 24px;
+}
