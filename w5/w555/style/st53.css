@@ -16,6 +16,7 @@ body {
   gap: 16px;
 }
 .topnav__button {
+  font-family: "Nanum Myeongjo", serif;
   color: white;
   text-transform: capitalize;
 }
