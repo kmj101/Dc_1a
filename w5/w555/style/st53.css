@@ -24,3 +24,8 @@ body {
 .topnav__logo {
   height: 36px;
 }
+
+.topnav__button > a {
+  color: white;
+  text-decoration: none;
+}
