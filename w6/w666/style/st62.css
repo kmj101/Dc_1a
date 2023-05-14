@@ -13,7 +13,6 @@ body {
   max-width: 1200px;
   margin-inline: auto;
   padding-inline: 24px;
-  display: flex;
 }
 .wrapper {
   /* background-color: blue; */
@@ -33,15 +32,9 @@ body {
   padding-block: 12px;
 }
 
-.nav .nav_menuWrapper1 {
+.nav .nav_menuWrapper {
   display: flex;
   gap: 24px;
-  align-items: baseline;
-}
-
-.nav .nav_menuWrapper2 {
-  display: flex;
-  gap: 12px;
   align-items: baseline;
 }
 
