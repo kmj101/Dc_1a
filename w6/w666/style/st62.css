@@ -15,7 +15,7 @@
 }
 
 .nav {
-  background-color: black;
+  /* background-color: black; */
   color: white;
   font-weight: 700px;
 }
@@ -38,6 +38,9 @@
   gap: 12px;
   align-items: baseline;
 }
+
+.nav .container {
+    background-color: black;}
 
 .button {
   background-color: cadetblue;
