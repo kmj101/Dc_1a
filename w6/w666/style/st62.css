@@ -1,9 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 .container {
-  max-width: 1200px;
+  --varrr: 64px
+  max-width: calc( 
+  1200px + 2 * var(--varrr));
   margin-inline: auto;
   padding-inline: 24px;
 }
