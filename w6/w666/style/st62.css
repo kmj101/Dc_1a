@@ -3,12 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  /* color: white; */
-}
-.section {
-  /* background-color: red; */
-}
 .container {
   /* background-color: green; */
   max-width: 1200px;
@@ -18,7 +12,6 @@ body {
 .wrapper {
   /* background-color: blue; */
   padding-block: 64px;
-  display: flex;
 }
 
 .nav {
@@ -48,6 +41,6 @@ body {
 
 .button {
   background-color: cadetblue;
-  padding: 8px; 16px;
+  padding: 8px 16px;
   border-radius: 8px;
 }
