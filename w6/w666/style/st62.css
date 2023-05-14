@@ -26,20 +26,20 @@ body {
   font-weight: 700px;
 }
 
-.nav .wrapper {
+.section nav .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   padding-block: 12px;
 }
 
-.nav .nav_menuWrapper1 {
+.section nav .nav_menuWrapper1 {
   display: flex;
   gap: 24px;
   align-items: baseline;
 }
 
-.nav .nav_menuWrapper2 {
+.section nav .nav_menuWrapper2 {
   display: flex;
   gap: 12px;
   align-items: baseline;
