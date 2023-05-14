@@ -8,7 +8,7 @@ body {
 .section {
   background-color: red;
 }
-.container {
+.section .container {
   background-color: green;
   max-width: 1200px;
   margin-inline: auto;
