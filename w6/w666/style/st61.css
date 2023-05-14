@@ -12,8 +12,6 @@ body {
   background-color: green;
   max-width: 1200px;
   margin-inline: auto;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 .wrapper {
   background-color: blue;
