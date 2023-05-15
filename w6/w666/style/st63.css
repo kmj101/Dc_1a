@@ -28,7 +28,7 @@
 
 .nav__menuWrapper1 {
   display: flex;
-  gap: 12px;
+  gap: 24px;
   align-items: baseline;
 }
 
@@ -39,10 +39,17 @@
 }
 
 .button {
+  width: fit-content;
   background-color: cadetblue;
   padding: 8px 16px;
   border-radius: 8px;
   color: white;
   font-weight: 700px;
   text-align: center;
+}
+
+.button--type-text {
+  background-color: unset;
+  color: cadetblue;
+  padding-inline: 0;
 }
