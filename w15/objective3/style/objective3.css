@@ -28,7 +28,7 @@ main {
 }
 
 section {
-  scroll-snap-align: center;
+  scroll-snap-align: legt;
   overflow: hidden;
 }
 
@@ -43,8 +43,8 @@ section:nth-child(even) {
 }
 
 .wrapper {
-  width: min(60ch, 100% - 4rem);
-  min-height: max(50rem, 100dvh);
+  width: min(70ch, 100% - 4rem);
+  min-height: max(10rem, 100dvh);
   margin-inline: auto;
   display: flex;
   flex-direction: column;
@@ -76,6 +76,7 @@ video {
 }
 #s2.triggered .animTarget {
   transform: scale(1);
+  transform: scale3d(1);
 }
 
 #s3 .animTarget {
