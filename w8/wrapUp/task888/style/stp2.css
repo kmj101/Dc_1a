@@ -160,11 +160,7 @@ background-color: ;
   text-decoration: underline;
   background-color: white;
   color:black
-  font-size: 0.875rem;
-  border-top: 3px solid #444444;
-  margin: 10px; auto;
-  container-type: inline-size;
-  container-name: footer;
+
 }
 .footer a {
   text-decoration: none;
