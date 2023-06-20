@@ -27,3 +27,14 @@ const animTriggers = document.querySelectorAll(
 animTriggers.forEach((aaaa) => {
   gggggg.observe(aaaa);
 });
+
+window.onload = function () {
+  var el = document.getElementById("animTrigger");
+  el.onclick = hello;
+};
+
+function hello() {
+  alert(
+    "게임을 설치하기 위해선 로그인이 필요합니다."
+  );
+}
