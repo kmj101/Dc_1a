@@ -128,31 +128,6 @@ video {
   transform: scale3d(1);
 }
 
-/* #s5 .animTarget {
-  transform: translateX(100vw);
-}
-#s5 .animTarget:nth-child(1) {
-  transition: transform 500ms ease-in-out;
-}
-#s5 .animTarget:nth-child(2) {
-  transition: transform 450ms ease-in-out 50ms;
-}
-#s5.triggered .animTarget {
-  transform: translateY(-50px);
-} */
-
-#s4 .animTarget:nth-child(1) {
-  transform: translateY(-100vw);
-  transition: transform 500ms ease-in-out;
-}
-#s4 .animTarget:nth-child(2) {
-  transform: translateY(100vw);
-  transition: transform 500ms ease-in-out;
-}
-#s4.triggered .animTarget {
-  transform: translateY(0);
-}
-
 #s3 .animTarget {
   opacity: 0;
   transition: transform 750ms ease-out,
@@ -176,7 +151,6 @@ video {
   animation: wiggle 3s;
 }
 
-/* Keyframes */
 @keyframes wiggle {
   0%,
   7% {
