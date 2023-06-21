@@ -17,8 +17,12 @@ body {
     "Helvetica Neue", sans-serif;
   font-size: 1rem;
   line-height: 2;
-  background-image: url(ruin1.jpg);
-}
+  background-image: url(ruin1.jpg), opacity: 0.5;
+  
+  }
+
+
+
 
 main {
   width: 100%;
