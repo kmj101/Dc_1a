@@ -17,6 +17,7 @@ body {
     "Helvetica Neue", sans-serif;
   font-size: 1rem;
   line-height: 2;
+  background-image: url(ruin1.jpg);
 }
 
 main {
@@ -37,7 +38,7 @@ section:nth-child(even) {
   content: "";
   background: linear-gradient(
     45deg in oklch,
-    oklch(0% 0.01 300) 0%,
+    oklch(0% 0.01 300) 50%,
     oklch(50% 0.25 200) 150%
   );
 }
@@ -53,6 +54,10 @@ section:nth-child(even) {
 
 .content {
   border-bottom: 1px solid rgb(255, 255, 255);
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: all 500ms ease;
 }
 
 img,
@@ -120,12 +125,19 @@ video {
 }
 
 #s2 .animTarget {
-  transform: scale(0);
-  transition: transform 500ms ease-in-out;
+  opacity: 0;
+  transition: transform 750ms ease-out,
+    opacity 1000ms;
+}
+#s2 .animTarget:nth-child(1) {
+  transform: translateY(-50px);
+}
+#s2 .animTarget:nth-child(2) {
+  transform: translateY(50px);
 }
 #s2.triggered .animTarget {
-  transform: scale(1);
-  transform: scale3d(1);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #s3 .animTarget {
@@ -144,37 +156,27 @@ video {
   transform: translateY(0);
 }
 
+#s5 .animTarget {
+  opacity: 0;
+  transition: transform 750ms ease-out,
+    opacity 1000ms;
+}
+#s5 .animTarget:nth-child(1) {
+  transform: translateY(-50px);
+}
+#s5 .animTarget:nth-child(2) {
+  transform: translateY(50px);
+}
+#s5.triggered .animTarget {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 #s5.triggered .animTarget:nth-child(1) {
   animation: wiggle 3s;
 }
 #s5.triggered .animTarget:nth-child(2) {
   animation: wiggle 3s;
-}
-
-@keyframes wiggle {
-  0%,
-  7% {
-    transform: rotateZ(0);
-  }
-  15% {
-    transform: rotateZ(-15deg);
-  }
-  20% {
-    transform: rotateZ(10deg);
-  }
-  25% {
-    transform: rotateZ(-10deg);
-  }
-  30% {
-    transform: rotateZ(6deg);
-  }
-  35% {
-    transform: rotateZ(-4deg);
-  }
-  40%,
-  100% {
-    transform: rotateZ(0);
-  }
 }
 
 .main__media {
