@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+a {text-decoration: none;}
 .hide {
   display: none;
 }
@@ -46,6 +47,7 @@ section:nth-child(even) {
     oklch(50% 0.25 200) 150%
   );
 }
+
 
 .wrapper {
   width: min(70ch, 100% - 4rem);
@@ -122,14 +124,23 @@ video {
   align-items: baseline;
 }
 
+
+
 #s0 .animTarget {
   font-size: 1.2rem;
+  color: gray;
   background-image: url(img/jpeg/we.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   font-size: 50px;
+  position: relative;
+  
 }
+
+#s0 .animTarget:hover {text-shadow: 0.8rem 0.75rem 0.975rem
+  rgb(71, 71, 160),
+0 0.25rem 0.25rem rgba(71, 71, 160, 0.3);}
 
 #s1 .animTarget {
   transform: scale(0);
