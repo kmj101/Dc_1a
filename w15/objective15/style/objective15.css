@@ -3,6 +3,7 @@
 }
 
 a {text-decoration: none;}
+
 .hide {
   display: none;
 }
@@ -129,12 +130,10 @@ video {
 #s0 .animTarget {
   font-size: 1.2rem;
   color: gray;
-  background-image: url(img/jpeg/we.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   font-size: 50px;
-  position: relative;
   
 }
 
