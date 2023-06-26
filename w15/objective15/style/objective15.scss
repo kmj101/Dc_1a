@@ -2,8 +2,12 @@
   box-sizing: border-box;
 }
 
+a {text-decoration: none;}
+.hide {
+  display: none;
+}
 html {
-  color-scheme: light dark;
+  color-scheme: dark;
 }
 
 body {
@@ -11,12 +15,13 @@ body {
   height: 100dvh;
   overflow: hidden;
   margin: 0;
-  font-family: system-ui, -apple-system,
+  font-family: 'Bacasime Antique', serif;
     BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans",
     "Helvetica Neue", sans-serif;
   font-size: 1rem;
   line-height: 2;
+  background-image: url(ruin1.jpg);
 }
 
 main {
@@ -30,6 +35,7 @@ main {
 section {
   scroll-snap-align: legt;
   overflow: hidden;
+  padding: 10px, 10px, 10px, 10px;
 }
 
 section:nth-child(even) {
@@ -37,10 +43,11 @@ section:nth-child(even) {
   content: "";
   background: linear-gradient(
     45deg in oklch,
-    oklch(0% 0.01 300) 0%,
+    oklch(0% 0.01 300) 50%,
     oklch(50% 0.25 200) 150%
   );
 }
+
 
 .wrapper {
   width: min(70ch, 100% - 4rem);
@@ -53,6 +60,11 @@ section:nth-child(even) {
 
 .content {
   border-bottom: 1px solid rgb(255, 255, 255);
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: all 500ms ease;
+  padding: 1rem;
 }
 
 img,
@@ -72,13 +84,14 @@ video {
   text-align: center;
   margin: 10px;
   justify-content: right;
-  cursor: pointer;
   max-width: 18.75rem;
   border: 0.0625rem solid #ccc;
   border-radius: 0.5rem;
   overflow: hidden;
   transition: all 500ms ease;
+  cursor: pointer;
 }
+
 .button:hover {
   transform: translateY(-0.125rem) scale(1.01);
   box-shadow: 0.8rem 0.75rem 0.975rem
@@ -111,6 +124,31 @@ video {
   align-items: baseline;
 }
 
+.s00 {background: linear-gradient(
+  to right,
+  rgba(20, 20, 20, 0) 100%,
+  rgba(20, 20, 20, 0.25) 25%,
+  rgba(20, 20, 20, 0.5) 50%,
+  rgba(20, 20, 20, 0.75) 75%,
+  rgba(20, 20, 20, 1) 100%
+)}
+
+#s0 .animTarget {
+  font-size: 1.2rem;
+  color: gray;
+  background-image: url(img/jpeg/we.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-size: 50px;
+  position: relative;
+  
+}
+
+#s0 .animTarget:hover {text-shadow: 0.8rem 0.75rem 0.975rem
+  rgb(71, 71, 160),
+0 0.25rem 0.25rem rgba(71, 71, 160, 0.3);}
+
 #s1 .animTarget {
   transform: scale(0);
   transition: transform 500ms ease-in-out;
@@ -120,12 +158,19 @@ video {
 }
 
 #s2 .animTarget {
-  transform: scale(0);
-  transition: transform 500ms ease-in-out;
+  opacity: 0;
+  transition: transform 750ms ease-out,
+    opacity 1000ms;
+}
+#s2 .animTarget:nth-child(1) {
+  transform: translateY(-50px);
+}
+#s2 .animTarget:nth-child(2) {
+  transform: translateY(50px);
 }
 #s2.triggered .animTarget {
-  transform: scale(1);
-  transform: scale3d(1);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #s3 .animTarget {
@@ -144,6 +189,22 @@ video {
   transform: translateY(0);
 }
 
+#s5 .animTarget {
+  opacity: 0;
+  transition: transform 750ms ease-out,
+    opacity 1000ms;
+}
+#s5 .animTarget:nth-child(1) {
+  transform: translateY(-50px);
+}
+#s5 .animTarget:nth-child(2) {
+  transform: translateY(50px);
+}
+#s5.triggered .animTarget {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 #s5.triggered .animTarget:nth-child(1) {
   animation: wiggle 3s;
 }
@@ -151,33 +212,12 @@ video {
   animation: wiggle 3s;
 }
 
-@keyframes wiggle {
-  0%,
-  7% {
-    transform: rotateZ(0);
-  }
-  15% {
-    transform: rotateZ(-15deg);
-  }
-  20% {
-    transform: rotateZ(10deg);
-  }
-  25% {
-    transform: rotateZ(-10deg);
-  }
-  30% {
-    transform: rotateZ(6deg);
-  }
-  35% {
-    transform: rotateZ(-4deg);
-  }
-  40%,
-  100% {
-    transform: rotateZ(0);
-  }
-}
-
 .main__media {
   margin-top: 24px;
   margin-bottom: 48px;
+}
+
+.main__mmedia {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
