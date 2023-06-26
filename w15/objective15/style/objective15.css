@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 
+.hide {
+  display: none;
+}
 html {
   color-scheme: dark;
 }
@@ -11,18 +14,14 @@ body {
   height: 100dvh;
   overflow: hidden;
   margin: 0;
-  font-family: system-ui, -apple-system,
+  font-family: 'Bacasime Antique', serif;
     BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans",
     "Helvetica Neue", sans-serif;
   font-size: 1rem;
   line-height: 2;
-  background-image: url(ruin1.jpg), opacity: 0.5;
-  
-  }
-
-
-
+  background-image: url(ruin1.jpg);
+}
 
 main {
   width: 100%;
@@ -35,6 +34,7 @@ main {
 section {
   scroll-snap-align: legt;
   overflow: hidden;
+  padding: 10px, 10px, 10px, 10px;
 }
 
 section:nth-child(even) {
@@ -62,6 +62,7 @@ section:nth-child(even) {
   border-radius: 0.5rem;
   overflow: hidden;
   transition: all 500ms ease;
+  padding: 1rem;
 }
 
 img,
@@ -81,13 +82,14 @@ video {
   text-align: center;
   margin: 10px;
   justify-content: right;
-  cursor: pointer;
   max-width: 18.75rem;
   border: 0.0625rem solid #ccc;
   border-radius: 0.5rem;
   overflow: hidden;
   transition: all 500ms ease;
+  cursor: pointer;
 }
+
 .button:hover {
   transform: translateY(-0.125rem) scale(1.01);
   box-shadow: 0.8rem 0.75rem 0.975rem
@@ -118,6 +120,15 @@ video {
   display: flex;
   gap: 24px;
   align-items: baseline;
+}
+
+#s0 .animTarget {
+  font-size: 1.2rem;
+  background-image: url(img/jpeg/we.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-size: 50px;
 }
 
 #s1 .animTarget {
